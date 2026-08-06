@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">;
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulário Completo</h1>
+    <h1 style="text-align: center; font-size: 1.5em;">Formulário Completo</h1>
     <form action="/submit" method="post">
         <fieldset>
             <legend>Dados Pessoais</legend>
@@ -28,26 +29,27 @@
 
         <fieldset>
             <legend>Preferências</legend>
-                Cor Favorita: 
-                <select name="cor_favorita" required>
-                <option value="vermelho">Vermelho</option>
-                <option value="azul">Azul</option>
-                <option value="verde">Verde</option></p><br>
-                </Select>
+                <p> Cor Favorita: 
+                <select style .botao-clicavel {cursor:grab;} name="cor_favorita" required>
+                <option style="background-color: #ffffff;" value="azul">Branco</option>
+                <option style="background-color: #0000ff;" value="azul">Azul</option>
+                <option style="background-color: #ff0000;" value="vermelho">Vermelho</option>
+                <option style="background-color: #008000;" value="verde">Verde</option></p><br>
+                </Select></p>
 
-                <p>Gênero: 
+                <p>Gênero: <br>
                 <input type="radio" name="genero" value="m" required> 
                 Masculino
                 <input type="radio" name="genero" value="f" required> 
-                Feminino </p>
+                Feminino <p>
 
                 <p>Interesses:<br>
                 <input type="checkbox" value="esportes" required> 
-                <label>Esportes</label><br>
+                    Esportes
                 <input type="checkbox"  value="música" required> 
-                <label></label>Música</label><br>
+                    Música
                 <input type="checkbox"  value="Tecnologia" required> 
-                <label>Tecnologia</label>
+                    Tecnologia
                 </p>
         </fieldset>
 
